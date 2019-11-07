@@ -2,7 +2,7 @@
   "name": "rorvswild-light-ui",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "RoRvsWild light theme UI",
+  "description": "Accessible light Atom UI theme based on RoRvsWild colors.",
   "keywords": [
     "ui",
     "theme",
