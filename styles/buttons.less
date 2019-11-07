@@ -1,0 +1,94 @@
+
+// Buttons
+// -------------------
+
+// Overrides: atom/atom/static/buttons.less
+
+.btn {
+  color: @text-color;
+  background-color: @button-background-color;
+  box-shadow: 0 0 0 1px @button-border-color, 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+
+  &:hover,
+  &:focus {
+    color: @text-color-selected;
+    background-color: @button-background-color-hover;
+  }
+
+  &:active {
+    color: @text-color-selected;
+    background-color: darken(@button-background-color, 2%);
+  }
+
+  &.selected {
+    color: @text-color-highlight;
+    background-color: @background-color-info;
+    box-shadow: 0 0 0 1px @button-border-color, 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+  }
+
+  &:focus,
+  &:focus:active {
+    outline: none;
+  }
+}
+
+// Colored buttons -----------------------
+
+.btn.btn-primary {
+  .btn-color(@background-color-info);
+
+  box-shadow: 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+}
+
+.btn.btn-info    {
+  .btn-color(@background-color-info);
+
+  box-shadow: 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+}
+
+.btn.btn-success {
+  .btn-color(@background-color-success);
+
+  box-shadow: 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+}
+
+.btn.btn-warning {
+  .btn-color(@background-color-warning);
+
+  box-shadow: 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+}
+
+.btn.btn-error {
+  .btn-color(@background-color-error);
+
+  box-shadow: 0 4px 4px -2px rgba(25, 32, 42, 0.1);
+}
+
+.btn-color(@bg) {
+  color: @text-color-selected;
+  background-color: @bg;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(@bg, 4%);
+  }
+
+  &:active {
+    background-color: darken(@bg, 4%);
+  }
+
+  &.selected {
+    background-color: lighten(@bg, 4%);
+  }
+
+  &.selected:focus,
+  &.selected:hover {
+    background-color: lighten(@bg, 8%);
+  }
+}
+
+// Button Group -----------------------
+
+.btn-group > .btn {
+  //border-color: rgba(25, 32, 42, 0.1);
+}

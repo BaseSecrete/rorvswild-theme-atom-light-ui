@@ -1,0 +1,51 @@
+.settings-view {
+  background: @app-background-color;
+}
+
+.settings-view .section:first-child,
+.settings-view .section:last-child {
+  padding: 48px;
+}
+
+.settings-view section .section-heading,
+.settings-view .section .section-heading {
+  font-size: 2.074rem;
+  color: @text-color;
+}
+
+.settings-view .sub-section .sub-section-heading {
+  font-size: 1.728rem;
+  background-color: @app-background-color;
+  color: @text-color;
+}
+
+.settings-view .package-card {
+  padding: 24px;
+  margin-bottom: 12px;
+  list-style-type: none;
+  font-size: 1.2em;
+  border-radius: 4px;
+  border: 1px solid @gray-200;
+  background-color: @white;
+}
+
+.settings-view .package-card:hover {
+  background-color: lighten(@background-color-selected, 3%);
+}
+
+.settings-view .alert-info {
+  background: @white;
+  color: #80abe3;
+}
+
+.input-checkbox:before,
+.input-checkbox:after,
+.input-radio:before,
+.input-toggle:before {
+  background-color: @text-color;
+}
+
+.settings-view .config-menu .nav > li.active > a {
+  color: @gray-700;
+  background: lighten(@background-color-selected, 3%);
+}
